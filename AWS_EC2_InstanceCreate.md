@@ -48,5 +48,24 @@
   Click on `Instance id` to check the full details
   ![image](https://user-images.githubusercontent.com/40932902/208630402-8e778067-2a8a-4a84-ac1f-db2d71be358e.png)
 
- 
+### Now, we are ready to connect our Machine
+1. Click on Instance Id ![image](https://user-images.githubusercontent.com/40932902/208632931-58684707-27c7-40bf-86ae-87eb5f6e9003.png)
+2. Click on `Connect` ![image](https://user-images.githubusercontent.com/40932902/208633092-725bbc38-c46b-48c1-ba09-9620cb2226e9.png)
+3. Go to `SSH Client` and copy the example command ![image](https://user-images.githubusercontent.com/40932902/208633432-1c3019d4-d9e6-40c0-964f-4c5d72e019be.png)
+4. Now, go to local system where login key has been downloaded or move that key to any specific folder then open `CMD` at the specific folder
+5. now open cmd in key folder ![image](https://user-images.githubusercontent.com/40932902/208634718-4b7652bf-b010-409d-8cb8-68e56afa601a.png)
+6. now paste the copied command in cmd and press enter ![image](https://user-images.githubusercontent.com/40932902/208635023-25b9bca9-7e3d-4a8b-8f3a-10f484f02672.png)
+7. Now, type `yes` and press enter.... bingooo!! we are not connected to our instance![image](https://user-images.githubusercontent.com/40932902/208635244-4b5fe795-a147-48c6-84cf-a0c30d029c06.png)
+
+## Let's Run some command to check our AWS Machine
+1. Check the OS, `cmd:  cat /etc/os-release`, is that the same as we configured while creating instance ![image](https://user-images.githubusercontent.com/40932902/208636071-f1090df9-2746-43ea-a364-e81db45016a0.png)
+2. Let's Check RAM details `cmd: free -m` we have selected 1gb ![image](https://user-images.githubusercontent.com/40932902/208636384-9ab496fe-604c-47cb-a44a-7aa2b7c109a1.png)
+3. Check CPU details `cmd: lscpu` selected 1 CPU ![image](https://user-images.githubusercontent.com/40932902/208636641-d049b9b2-0ae0-4506-acae-e23e4ab9a61f.png)
+4. Check Storage Capacity `cmd: df -h` ![image](https://user-images.githubusercontent.com/40932902/208637257-1df59fce-a20e-49a6-98c9-878e08164158.png)
+![image](https://user-images.githubusercontent.com/40932902/208637675-fb45f667-78e0-4f1b-8076-89a86d36f76e.png)
+5. Check Ip details `cmd: ip a` ![image](https://user-images.githubusercontent.com/40932902/208638019-3b27da57-b83e-4261-894e-159c7db103a7.png)
+![image](https://user-images.githubusercontent.com/40932902/208638094-44ae9b8b-8445-4032-a423-239892c4786f.png)
+
+
+
 
