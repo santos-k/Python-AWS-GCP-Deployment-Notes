@@ -53,11 +53,21 @@
 2. Click on `Connect` ![image](https://user-images.githubusercontent.com/40932902/208633092-725bbc38-c46b-48c1-ba09-9620cb2226e9.png)
 3. Go to `SSH Client` and copy the example command ![image](https://user-images.githubusercontent.com/40932902/208633432-1c3019d4-d9e6-40c0-964f-4c5d72e019be.png)
 4. Now, go to local system where login key has been downloaded or move that key to any specific folder then open `CMD` at the specific folder
-5. now open cmd in key folder ![image](https://user-images.githubusercontent.com/40932902/208634718-4b7652bf-b010-409d-8cb8-68e56afa601a.png)
-6. now paste the copied command in cmd and press enter ![image](https://user-images.githubusercontent.com/40932902/208635023-25b9bca9-7e3d-4a8b-8f3a-10f484f02672.png)
-7. Now, type `yes` and press enter.... bingooo!! we are not connected to our instance![image](https://user-images.githubusercontent.com/40932902/208635244-4b5fe795-a147-48c6-84cf-a0c30d029c06.png)
+# Connect to instance
+## 1. Connect Our Instance using `Windows CMD`(SSH client supported)
+   - now open cmd in key folder ![image](https://user-images.githubusercontent.com/40932902/208634718-4b7652bf-b010-409d-8cb8-68e56afa601a.png)
+   - now paste the copied command in cmd and press enter ![image](https://user-images.githubusercontent.com/40932902/208635023-25b9bca9-7e3d-4a8b-8f3a-10f484f02672.png)
+   - Now, type `yes` and press enter.... bingooo!! we are not connected to our instance![image](https://user-images.githubusercontent.com/40932902/208635244-4b5fe795-a147-48c6-84cf-a0c30d029c06.png)
 
-## Let's Run some command to check our AWS Machine
+## 2. We cannot connect our instance using windows cmd if does not support ssh communication, for that we can use below methods
+## A. Connect Our Instace using `GitBash`, download and install gitbash for windows
+   - open gitbash terminal and change directory where key is present ![image](https://user-images.githubusercontent.com/40932902/208640771-aae7c8ed-3bd0-483c-b63a-47846f527054.png)
+   - Paste the same command and press enter ![image](https://user-images.githubusercontent.com/40932902/208641041-df4ef9ef-df4e-4392-bdd4-fc3e7db321b4.png)
+connected to instance ![image](https://user-images.githubusercontent.com/40932902/208645509-8eb7e579-be43-4889-b5b1-03aad8538f0e.png)
+
+## B. We can connect using Putty https://www.putty.org/
+ 
+## Let's Run some command to check our AWS Machine (below cmds will work windows as well as linux)
 1. Check the OS, `cmd:  cat /etc/os-release`, is that the same as we configured while creating instance ![image](https://user-images.githubusercontent.com/40932902/208636071-f1090df9-2746-43ea-a364-e81db45016a0.png)
 2. Let's Check RAM details `cmd: free -m` we have selected 1gb ![image](https://user-images.githubusercontent.com/40932902/208636384-9ab496fe-604c-47cb-a44a-7aa2b7c109a1.png)
 3. Check CPU details `cmd: lscpu` selected 1 CPU ![image](https://user-images.githubusercontent.com/40932902/208636641-d049b9b2-0ae0-4506-acae-e23e4ab9a61f.png)
