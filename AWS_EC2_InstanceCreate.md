@@ -144,9 +144,19 @@ connected to instance ![image](https://user-images.githubusercontent.com/4093290
 
 - when you close the terminal then also this app will not work, to keep running the app we need to run the app in specific way
 
-## Keep running the App even after closing Terminal
-- to do so, first the terminate the code if running then, run this command `nohup python3 app.py`![image](https://user-images.githubusercontent.com/40932902/208696999-afd3a3e7-b618-479e-9a0b-7a5d9de27d2f.png)
+## Keep running/alive the App even after closing Terminal
+- to do so, first the terminate the code if running then, run this command `nohup python3 app.py &`![image](https://user-images.githubusercontent.com/40932902/208696999-afd3a3e7-b618-479e-9a0b-7a5d9de27d2f.png)
 - even after closing terminal app will visible
+
+### Check running process in Linux 
+- `ps -aux` command will give the all running process list![image](https://user-images.githubusercontent.com/40932902/208724998-46c89f61-8535-4da4-aa67-c0cc6c040f6e.png)
+- python script running
+![image](https://user-images.githubusercontent.com/40932902/208725065-e69bc09c-4c8f-4e8e-a94e-71a7c5183711.png)
+- Check any specific port running status `sudo lsof -i:8080` ![image](https://user-images.githubusercontent.com/40932902/208725936-e94a40b2-3e71-4ddc-92ef-75c7003ff6f3.png)
+- Kill/stop running process on any port `kill -9 processId`, process will get terminated ![image](https://user-images.githubusercontent.com/40932902/208726432-1695ef5b-2ae6-4207-924b-82e9d1f7a908.png)
+- or sudo kill -9 `sudo lsof -t -i:9001` ![image](https://user-images.githubusercontent.com/40932902/208727614-1564a22a-1b05-4092-a1fa-2ec47c8afa25.png)
+
+- check port status after kill, there will no record ![image](https://user-images.githubusercontent.com/40932902/208726560-a42213cf-fc0c-472d-bdde-de101e0d990f.png)
 
 
 
