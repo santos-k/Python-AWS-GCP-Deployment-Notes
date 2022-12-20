@@ -48,7 +48,9 @@
   Click on `Instance id` to check the full details
   ![image](https://user-images.githubusercontent.com/40932902/208630402-8e778067-2a8a-4a84-ac1f-db2d71be358e.png)
 
-### Now, we are ready to connect our Machine
+# Communicate with EC2 Instance 
+- We can communicate using any terminal like windows cms, linux terminal, gitbash terminal, putty etc...
+### Now, we are ready to communicate our Machine
 1. Click on Instance Id ![image](https://user-images.githubusercontent.com/40932902/208632931-58684707-27c7-40bf-86ae-87eb5f6e9003.png)
 2. Click on `Connect` ![image](https://user-images.githubusercontent.com/40932902/208633092-725bbc38-c46b-48c1-ba09-9620cb2226e9.png)
 3. Go to `SSH Client` and copy the example command ![image](https://user-images.githubusercontent.com/40932902/208633432-1c3019d4-d9e6-40c0-964f-4c5d72e019be.png)
@@ -75,6 +77,60 @@ connected to instance ![image](https://user-images.githubusercontent.com/4093290
 ![image](https://user-images.githubusercontent.com/40932902/208637675-fb45f667-78e0-4f1b-8076-89a86d36f76e.png)
 5. Check Ip details `cmd: ip a` ![image](https://user-images.githubusercontent.com/40932902/208638019-3b27da57-b83e-4261-894e-159c7db103a7.png)
 ![image](https://user-images.githubusercontent.com/40932902/208638094-44ae9b8b-8445-4032-a423-239892c4786f.png)
+
+#### We establised communication with EC2 instance using terminals, now we need to upload our program files to AWS machine
+- To upload external file to AWS machine we need a software called WinSCP https://winscp.net/eng/index.php
+
+## Setup WinSCP
+1. Download and install WinSCP
+2. Open WinSCP ![image](https://user-images.githubusercontent.com/40932902/208659012-cda2896c-95b0-4618-8563-e3e60f2c901c.png)
+3. To connect we need some details `Hostname`, `username` and `password` of our EC2 machine
+    - Find `Hostname` of EC2 instance, go to instance page > connect > SSH client![image](https://user-images.githubusercontent.com/40932902/208659764-092b3b82-b1d3-49f2-9f16-0cbbbc32a264.png)
+    - to Find `Uername` : Instance > EC2 Instance Connect ![image](https://user-images.githubusercontent.com/40932902/208660193-6025fa47-eb18-47c1-ab38-a1a813093246.png)
+    - `Password` we have already `.pem` file as password
+ 4. Enter the Hostname and Username ![image](https://user-images.githubusercontent.com/40932902/208660655-a66f2e07-7b2d-411a-afd2-3b53877ead4f.png)
+ 5. To enter the password winscp required `.ppk` format instead of `.pem`, click on `Advanced`![image](https://user-images.githubusercontent.com/40932902/208660894-22ff3901-2b39-4083-abae-e841c11074e8.png)
+ 6. Select SSH > Authentication and then select private key file `.pem`![image](https://user-images.githubusercontent.com/40932902/208661363-1341d28b-cd68-4e7f-8445-06288112e54f.png)
+ 7. if `.pem` file not visible while selecting then change the file type to `All File (.)` in file explorer window then select that ![image](https://user-images.githubusercontent.com/40932902/208661696-885e5979-4575-4688-9d43-4cfd81e022c9.png)
+ 8. It will ask to change file type to putty, click yes and then will ask to save new `.ppk` file, allow that ![image](https://user-images.githubusercontent.com/40932902/208661943-93f1bb2f-4e36-426c-9bec-3ba1bf62e9b2.png)
+ ![image](https://user-images.githubusercontent.com/40932902/208662048-a7fb97df-5f45-4a2c-9603-c1ca5734bc24.png)
+![image](https://user-images.githubusercontent.com/40932902/208662090-99802416-297a-4aa9-bc95-9a98a16cd5cd.png)
+ 9. Now, we are ready to connect![image](https://user-images.githubusercontent.com/40932902/208662163-3f252049-f8c8-4852-be22-f59a08fd8c18.png)
+ 10. Click ok and Click on Login to connect EC2![image](https://user-images.githubusercontent.com/40932902/208662285-16ed31cb-60b4-43c4-941b-9b930e0c5b8c.png)
+ ###### Bingooooooooooo!! we are connected now ![image](https://user-images.githubusercontent.com/40932902/208662724-7592a37a-aeaa-4453-a61a-3d73db4608f5.png)
+![image](https://user-images.githubusercontent.com/40932902/208663039-7c93a724-7dd9-4899-81b5-d9b86ec26d60.png)
+
+- We don't have any files in our EC2 machine
+- using Winscp we can upload any file from our local machine to ec2 by jusy drag and drop
+- uploading a python file to EC2, just select the file you want to upload > right click> upload ![image](https://user-images.githubusercontent.com/40932902/208663816-8da86993-cd2c-4265-bb4a-c99f1d383266.png)
+- File uploaded to EC2 ![image](https://user-images.githubusercontent.com/40932902/208663925-f33ac20f-6adf-465d-8912-575bc157b814.png)
+- Also we can upload file and folders using drag and drop ![image](https://user-images.githubusercontent.com/40932902/208664175-2176a7cb-1e6d-4ab8-a69a-66319b931f1a.png)
+- Check all files uisng terminal `cmd: ls` ![image](https://user-images.githubusercontent.com/40932902/208665765-9841282f-fbba-4226-a90e-9b9a0254e62e.png)
+
+
+### If we have connected with WinSCP then we donn't need to configure Putty, it's automatically configured
+  - To launch Putty click on ![image](https://user-images.githubusercontent.com/40932902/208664962-9ae8a2b3-4ed5-4136-99e7-4a2975c9b2d5.png)
+  - Connected easly ![image](https://user-images.githubusercontent.com/40932902/208665032-f492b324-856d-44f6-b6f0-9e71bd3ee97f.png)
+
+# Install Python and packages on EC2 using Putty or any other terminals
+- Lets check python comes with ubuntu or not, type `python` and press enter ![image](https://user-images.githubusercontent.com/40932902/208665477-4d563ad0-ed67-46b9-ab58-5254c724ade0.png)
+- Let's check for `python3`, so python3 is installed in our ubuntu os ![image](https://user-images.githubusercontent.com/40932902/208666089-5541df1d-61da-4317-b963-7b3d89219aa8.png)
+- we can install python using `sudo apt install python3` command if python not installed ![image](https://user-images.githubusercontent.com/40932902/208667092-ea5a14d3-bf89-4c6d-b451-9b9e4f94ac26.png)
+
+- update sedu command `sudo apt update`
+- install pip for installing python packages using command `sudo apt install python3-pip`
+- installing `numpy` using `pip install numpy` ![image](https://user-images.githubusercontent.com/40932902/208668343-c120ffc9-ab81-4c2d-9903-3aed63f6203d.png)
+- installing multiple python package using requirements.txt file at once `pip install -r requirements.txt` ![image](https://user-images.githubusercontent.com/40932902/208669115-ed9f3129-5ca1-49a0-8827-f00126443bcf.png)
+
+## Running Flask webapp in EC2:
+![image](https://user-images.githubusercontent.com/40932902/208669367-5c25088c-db98-4e82-ac66-26c7c740e2d4.png)
+
+
+
+
+
+
+  
 
 
 
