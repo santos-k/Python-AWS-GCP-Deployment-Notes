@@ -31,8 +31,15 @@
   - Click on `Create new Key pair`, give relatable key any name and click `Create key pair` a `.pem` file will be downlaoded keep it safe and private, without this key cannot be loggedin into this instance.
   ![image](https://user-images.githubusercontent.com/40932902/208627580-72f4518b-4a57-49b8-84b1-2f5eecae8e7a.png)
   ![image](https://user-images.githubusercontent.com/40932902/208627646-cfd5ac17-f7e0-434b-a873-994cd9be208f.png)
-6. Network Settings: Keep this default
-  ![image](https://user-images.githubusercontent.com/40932902/208628553-395df57b-3649-4b0c-b302-c92f085298f9.png)
+6. Network Settings: very import step, click on Edit button
+![image](https://user-images.githubusercontent.com/40932902/208685664-7b6ccfdb-6aac-4744-87d7-8819fdf640a6.png)
+- Come down and click Add Security Group Rule button
+![image](https://user-images.githubusercontent.com/40932902/208685954-9b69dc43-4673-4772-a37a-1f7b066cb033.png)
+- Select Type : `All Traffic` and Source Type : `Anywhere`, do not touch any other fields
+- Note: Without this security group we will not able to see webapps
+![image](https://user-images.githubusercontent.com/40932902/208686116-2628599d-d6f1-405b-8bc4-9dd61ffc2d5f.png)
+
+
 7. Configure Storage: this is the C drive storage, select as per required, free account only get 30gb per account
     here we selecting 8GB C drive storage.
   ![image](https://user-images.githubusercontent.com/40932902/208629105-6b26a73a-53c7-4b20-beed-d41f02faf26d.png)
@@ -122,9 +129,24 @@ connected to instance ![image](https://user-images.githubusercontent.com/4093290
 - installing `numpy` using `pip install numpy` ![image](https://user-images.githubusercontent.com/40932902/208668343-c120ffc9-ab81-4c2d-9903-3aed63f6203d.png)
 - installing multiple python package using requirements.txt file at once `pip install -r requirements.txt` ![image](https://user-images.githubusercontent.com/40932902/208669115-ed9f3129-5ca1-49a0-8827-f00126443bcf.png)
 
-## Running Flask webapp in EC2:
-![image](https://user-images.githubusercontent.com/40932902/208669367-5c25088c-db98-4e82-ac66-26c7c740e2d4.png)
+#### app.py file closing line should look like as below, `host=0.0.0.0`, and port can be anything in this case `port=8080`
+- this 8080 port our this program will deploy
+![image](https://user-images.githubusercontent.com/40932902/208687792-da6b700b-a0be-41a5-bc15-0e00cc9176d3.png)
 
+## Deploye the WebApp
+- to run the app.py file, run command `python3 app.py`![image](https://user-images.githubusercontent.com/40932902/208688584-84b91b5a-fd15-4df5-901a-fe088aab6c8e.png)
+- As mentioned above app running on this http://172.31.90.153:8080 server, but when you visit this link it will not work
+- to see the deployment, use private DNS address along with port no: ![image](https://user-images.githubusercontent.com/40932902/208689469-6adb94c1-588d-4d90-a432-efd5938f7177.png)
+- our app is running at `ec2-52-91-185-213.compute-1.amazonaws.com:8080` open this link in browser ![image](https://user-images.githubusercontent.com/40932902/208694463-0d17837c-7c20-41dc-b101-b5021bc93393.png)
+
+- To press `Ctrl+C` in terminal to quite/terminate the app 
+- Once the app is terminated this link will not work! ![image](https://user-images.githubusercontent.com/40932902/208694588-bcd408a6-ec50-439e-9b21-c30fa43ef1b3.png)
+
+- when you close the terminal then also this app will not work, to keep running the app we need to run the app in specific way
+
+## Keep running the App even after closing Terminal
+- to do so, first the terminate the code if running then, run this command `nohup python3 app.py`![image](https://user-images.githubusercontent.com/40932902/208696999-afd3a3e7-b618-479e-9a0b-7a5d9de27d2f.png)
+- even after closing terminal app will visible
 
 
 
