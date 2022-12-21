@@ -63,6 +63,13 @@ Now, Let's Setup out project at GCP
     - after execution it will deploy and give deployed url link copy that and open in browser (or Ctrl+right Click) ![image](https://user-images.githubusercontent.com/40932902/208910335-f3369ac0-b77a-4124-89b8-76e6dab21c56.png)
     - Hurrree............ successfully deployed!!!! ![image](https://user-images.githubusercontent.com/40932902/208910600-cac7ae4f-61e2-4a74-89b2-d1faa6548e9e.png)
 
+## How to stop Running Application
+![image](https://user-images.githubusercontent.com/40932902/208911482-c19d405b-b502-4f00-8766-75bc32b0594e.png)
+![image](https://user-images.githubusercontent.com/40932902/208911677-66a704ab-466a-4ac1-a971-0a8a4273cd1e.png)
+![image](https://user-images.githubusercontent.com/40932902/208911799-8ecaacfa-ae9e-49cc-b19f-d2eb129023cf.png)
+![image](https://user-images.githubusercontent.com/40932902/208911916-73c7d779-405e-46d2-aa59-a17b6c0ff306.png)
+![image](https://user-images.githubusercontent.com/40932902/208912010-5675490b-0807-41ef-a3eb-47be11c17783.png)
+
 
 
 
