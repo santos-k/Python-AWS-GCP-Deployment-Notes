@@ -158,7 +158,8 @@ connected to instance ![image](https://user-images.githubusercontent.com/4093290
 
 - check port status after kill, there will no record ![image](https://user-images.githubusercontent.com/40932902/208726560-a42213cf-fc0c-472d-bdde-de101e0d990f.png)
 
-
+## Access EC2 Ubuntu machine in Remote Desktop 
+https://www.youtube.com/watch?v=PBKmTRz_2R4&ab_channel=iTExplorer
 
 
 
