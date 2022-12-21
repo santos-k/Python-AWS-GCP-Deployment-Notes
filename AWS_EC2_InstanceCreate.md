@@ -159,12 +159,19 @@ connected to instance ![image](https://user-images.githubusercontent.com/4093290
 - check port status after kill, there will no record ![image](https://user-images.githubusercontent.com/40932902/208726560-a42213cf-fc0c-472d-bdde-de101e0d990f.png)
 
 ## Access EC2 Ubuntu machine in Remote Desktop 
-https://www.youtube.com/watch?v=PBKmTRz_2R4&ab_channel=iTExplorer
-
-
-
-  
-
-
-
-
+- Follow this video: https://www.youtube.com/watch?v=PBKmTRz_2R4&ab_channel=iTExplorer
+1. Install XRDP in Ubuntu: `sudp apt install xrdp` ![image](https://user-images.githubusercontent.com/40932902/208888697-62de9623-e032-4e92-a948-523573fbc52a.png)
+2. Now, Enable XRDP: `sudo systemctl enable xrdp` ![image](https://user-images.githubusercontent.com/40932902/208888754-d38442ff-bee3-4323-ab49-8a9ef7593100.png)
+3. `sudo add-apt-repository ppa:gnome3-team/gnome3` ![image](https://user-images.githubusercontent.com/40932902/208889223-2c0e1c7b-40f4-4607-8f81-b71513dd3e54.png)
+4. `sudo apt-get install gnome-shell ubuntu-gnome-desktop` this step will take 10-15 minutes ![image](https://user-images.githubusercontent.com/40932902/208890958-386a92cc-4f35-490f-9430-b767ce74ed01.png)
+5. Setup Ubuntu Password: `sudo passwd ubuntu` here ubuntu is username (type and confirm password) ![image](https://user-images.githubusercontent.com/40932902/208891408-4aff74eb-d4f1-41c7-b51b-424efc381986.png)
+6. Reboot or (Stop and Start) before connecting to Remote Desktop the EC2 Ubuntu instance ![image](https://user-images.githubusercontent.com/40932902/208891845-ae2d175f-61b7-4bd4-8408-1d9eac6f1a3e.png)
+7. Now, Open Remote Desktop Connection in windows ![image](https://user-images.githubusercontent.com/40932902/208894449-fc51ed99-e8ac-4c4a-97da-9479bc5602f2.png)
+8. Copy the Enter the Public DNS IPv4 ![image](https://user-images.githubusercontent.com/40932902/208894642-de39b01c-2a99-45f6-9acd-0bd365cd5a8d.png)
+9. ![image](https://user-images.githubusercontent.com/40932902/208894824-b5abb253-0927-4016-b733-136e6551fed8.png)
+10. Confirm Yes ![image](https://user-images.githubusercontent.com/40932902/208894898-b4667707-a2a4-4040-80a0-0dfbadeca3f7.png)
+11. ![image](https://user-images.githubusercontent.com/40932902/208894919-16a0f954-a546-47f1-a08d-3dd202930040.png)
+12. Enter the Username `ubuntu` and password that setup earlier `12345` and click Ok ![image](https://user-images.githubusercontent.com/40932902/208895243-ec87e21f-9c87-4752-b9ea-6dbc214b6dad.png)
+13. Bingoooo!!! Connected to our Ubuntu GUI, although it might work very slow or get stuck below we are running this machine at very low configuration ![image](https://user-images.githubusercontent.com/40932902/208895673-4ff89551-37b6-4cae-ba67-c32f0a76df1b.png)
+14. ![image](https://user-images.githubusercontent.com/40932902/208895952-73d79c16-0816-46ef-ab89-c6848f217c40.png)
+![image](https://user-images.githubusercontent.com/40932902/208896615-6adb0276-b9ea-4c9e-9ea1-e7da2f666746.png)
