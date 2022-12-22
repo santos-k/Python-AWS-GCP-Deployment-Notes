@@ -1,6 +1,13 @@
 # Create GCP Virtual Machine Instance 
   - similar to AWS EC2 Instance
 
+## What will learn in this?
+1. Creating a GCP Ubuntu/Linux VM
+2. Will Connect to WinSCP (upload files from Local machine to VM) and then Connect To Putty
+3. Upload Portfolio program files to VM directory using WinSCP
+4. Will Connect to VM using Remote Desktop and will run portfolio app using Remote Desktop
+
+
 ## First, Create a Project
 1. To create Project go to `Menu > IAM & Admin > Manage Resources` ![image](https://user-images.githubusercontent.com/40932902/208935255-cfb10bbe-4cfa-43f6-a72f-8befb8a58a80.png)
 2. Click on Create Project button ![image](https://user-images.githubusercontent.com/40932902/208935571-49883fce-112e-453b-8420-38b695175e51.png)
