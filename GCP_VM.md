@@ -83,5 +83,8 @@
 ![image](https://user-images.githubusercontent.com/40932902/209126898-a999f032-e26b-4663-bfea-1ee178ec2fba.png)
 ![image](https://user-images.githubusercontent.com/40932902/209127269-0ded3956-583f-4908-a6c3-41e1ac809d00.png)
 ![image](https://user-images.githubusercontent.com/40932902/209127297-542f6fda-ea50-4065-8e82-5119f048a4b2.png)
+![image](https://user-images.githubusercontent.com/40932902/209127787-54036142-9087-4fd5-b8f2-bd282f7916b8.png)
+
+## Running Dash App in Remote Desktop![image](https://user-images.githubusercontent.com/40932902/209128395-b552c8bb-4cb4-49d0-b361-525bf65ac806.png)
 
 
