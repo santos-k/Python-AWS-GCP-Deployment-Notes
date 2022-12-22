@@ -1,4 +1,4 @@
-# Deploy Portfolio Application on GCP
+# Deploy Portfolio Application on GCP using Dockerfile
 ## Requirements:
 1. Application Files
     1. `app.py` python main file
