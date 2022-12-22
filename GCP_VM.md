@@ -63,19 +63,25 @@
 7. unistall python2.7 `sudo apt purge -y python2.7-minimal`
 8. install pip `sudo apt install python3-pip`
 9. install packages from requirements.txt `pip3 install -r requirements.txt`
+10. Run python script `python3 app.py`
 
 
+# Let's Access GCP VM using Remote Desktop Connection
+1.  Open VM terminal using Broser Shell or Putty
+2.  Follow below commands to setup VM
+    1. install XRDP, run `sudo apt install xrdp`
+    2. enable xrdp, run `sudo systemctl enable xrdp` and then `sudo add-apt-repository ppa:gnome3-team/gnome3`
+    3. COnfigure XRDP, run `sudo apt-get install gnome-shell ubuntu-gnome-desktop`
+    4. set password for login to remote, run `sudo passwd robinhud299` and then enter and confirm password 
+3.  Now, go to VM page and copy the Public/External IP![image](https://user-images.githubusercontent.com/40932902/209124409-6ae58ae6-8c5c-4107-a103-a4dc0cb6ea43.png)
 
+4.  Now, open Remote Desktop Connection in Windows machine and enter the same external ip and connect and confirm yes ![image](https://user-images.githubusercontent.com/40932902/209124593-29f7b749-ca47-4b1d-b1e3-e07620285dd8.png) ![image](https://user-images.githubusercontent.com/40932902/209124714-839acc3c-3869-4c5b-a0f1-184cc85ede55.png)
 
-
-
-
-
-
-
-
-
-
-
+5. Now, it will ask for login credentials enter the username as `robinhud299` and password as `12345` as earlier setup above and click ok ![image](https://user-images.githubusercontent.com/40932902/209124982-a1f366bb-7459-401a-89e2-0bd58207d8c4.png)
+### Connected to Remote Desktop
+![image](https://user-images.githubusercontent.com/40932902/209126302-5eb37b07-fb78-450d-978e-2bd216d385aa.png)
+![image](https://user-images.githubusercontent.com/40932902/209126898-a999f032-e26b-4663-bfea-1ee178ec2fba.png)
+![image](https://user-images.githubusercontent.com/40932902/209127269-0ded3956-583f-4908-a6c3-41e1ac809d00.png)
+![image](https://user-images.githubusercontent.com/40932902/209127297-542f6fda-ea50-4065-8e82-5119f048a4b2.png)
 
 
