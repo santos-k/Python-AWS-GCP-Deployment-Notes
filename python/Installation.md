@@ -10,4 +10,10 @@
     2. to install python2 `sudo apt-get install python`
     3. Specific version: `sudo apt-get install python3.8`
  2. Check Version:
-     ```python3 --version```
+     ```python3 --version
+        python --version
+     ```
+ 3. Uninstall: 
+    1. `sudo apt-get remove python3` This command will remove the Python 3 package and its dependencies, but it will not delete any configuration files or user-installed packages.
+    2. `sudo apt-get purge python3` And if you want to remove all the dependencies, configuration files and user-installed packages as well, you can use the following command
+   
