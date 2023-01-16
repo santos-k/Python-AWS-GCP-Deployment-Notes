@@ -5,9 +5,9 @@
   3. Version check: Run CMD and type `python` press enter to check the version
   
 ## Linux: 
-  1. Installation: 
+ 1. Installation: 
     1. to install python `sudo apt-get install python3` 
     2. to install python2 `sudo apt-get install python`
     3. Specific version: `sudo apt-get install python3.8`
-  2. Check Version:
-     <python3 --version> or <python --version> 
+ 2. Check Version:
+     < python3 --version >
