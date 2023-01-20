@@ -31,7 +31,8 @@
     3. Upload code to GCP, run below command, it will upload the file and execute all steps written in Dockerfile
         ```
         gcloud builds submit --tag gcr.io/project_id/project_id --project=project_id
-        
+        ```
+        ```
         gcloud builds submit --tag gcr.io/santosh-portfolio-372405/santosh-portfolio-372405 --project=santosh-portfolio-372405
         ```
         
@@ -46,6 +47,8 @@
     4. Now, Deploy the project and get the running server link
         ``` 
           gcloud run deploy --image gcr.io/project_id/project_id --platform=managed --project=project_id --allow-unauthenticated
+        ```
+        ```
           gcloud run deploy --image gcr.io/santosh-portfolio-372405/santosh-portfolio-372405 --platform=managed --project=santosh-portfolio-372405 --allow-unauthenticated
         ```
         - Run the above command, it will ask for Service name press enter keep it default
